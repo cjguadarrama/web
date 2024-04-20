@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>HTML</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página con Imagen de Fondo</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/imagenS.jpg');
+    background-size: cover; /* La imagen se ajustará para cubrir completamente el área del contenedor */
+    background-position: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
+  .content {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Agregar un fondo semi-transparente */
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      max-width: 90%; /* Reducir el ancho máximo en pantallas pequeñas */
+    }
+  }
+</style>
+</head>
 <body>
-  <p>Esta página web es una página HTML válida para prueba de publicidad Gerardo.</p>
+
+
 </body>
 </html>
+
